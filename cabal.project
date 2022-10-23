@@ -1,11 +1,33 @@
 
 packages:
     newscripts.cabal
-    ./plutus-apps/*/*.cabal
 
 -- Bump this if you need newer packages.
 index-state: 2022-05-18T00:00:00Z
 
+source-repository-package
+  type: git
+  location: https://github.com/input-output-hk/plutus-apps.git
+  tag: 4c832ce2999269376a94c26352faae17e5b5b6d3
+  subdir: doc
+          freer-extras
+          playground-common
+          plutus-chain-index
+          plutus-chain-index-core
+          plutus-contract
+          plutus-example
+          plutus-contract-certification
+          plutus-ledger
+          plutus-ledger-constraints
+          plutus-pab
+          plutus-pab-executables
+          plutus-playground-server
+          plutus-script-utils
+          plutus-tx-constraints
+          plutus-use-cases
+          plutus-streaming
+          rewindable-index
+          web-ghc
 
 -- We never, ever, want this.
 write-ghc-environment-files: never
